@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Web Kampung Perca</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div class="elfsight-app-856283f3-91d0-45b5-bd6a-f60a74918f8f"></div>
+    <!-- Header -->
+    <header class="mb-0 shadow-sm bg-white">
+      <div class="container flex items-center justify-between">
+        <a href="#">
+          <h3
+            class="font-montserrat text-secondary w-full font-bold text-xl uppercase py-8"
+          >
+            Sistem Informasi Kampung Perca
+          </h3>
+        </a>
+      </div>
+      <!-- Navbar -->
+      <nav class="bg-gray-800">
+        <div class="container flex">
+          <!-- all category -->
+          <div
+            class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group"
+          >
+            <span class="text-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-2 text-white font-sourceSansPro"
+              >All Categories</span
+            >
+            <div
+              class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                href="#"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <i class="fa-solid fa-shirt" class="w-5 h-5 object-contain"></i>
+                <span class="ml-6 text-gray-600 text-sm">Shirt</span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <i
+                  class="fa-solid fa-bag-shopping"
+                  class="w-5 h-5 object-contain"
+                ></i>
+                <span class="ml-6 text-gray-600 text-sm">Bag</span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <i class="fa-solid fa-shirt" class="w-5 h-5 object-contain"></i>
+                <span class="ml-6 text-gray-600 text-sm">Shirt</span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <i class="fa-solid fa-shirt" class="w-5 h-5 object-contain"></i>
+                <span class="ml-6 text-gray-600 text-sm">Shirt</span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <i class="fa-solid fa-shirt" class="w-5 h-5 object-contain"></i>
+                <span class="ml-6 text-gray-600 text-sm">Shirt</span>
+              </a>
+            </div>
+          </div>
+          <!-- navlink -->
+          <div class="flex items-center justify-between flex-grow pl-12">
+            <div class="flex items-center space-x-6 capitalize">
+              <a
+                href="/public/index.html"
+                class="text-gray-200 hover:text-primary transition"
+                >Home</a
+              >
+              <a
+                href="/public/shop.html"
+                class="text-gray-200 hover:text-primary transition"
+                >Shop</a
+              >
+              <a
+                href="./about.html"
+                class="text-gray-200 hover:text-primary transition"
+                >About Us</a
+              >
+              <a href="#" class="text-gray-200 hover:text-primary transition"
+                >Procedure</a
+              >
+            </div>
+            <div class="w-1/2 h-10 max-w-xl justify-between relative flex">
+              <span class="absolute left-4 top-2 text-lg text-gray-400">
+                <i class="fas fa-search"></i>
+              </span>
+              <input
+                type="text"
+                class="w-full bg-white border border-primary border-r-0 pl-12 rounded-l-md focus:outline-none"
+                placeholder="Cari"
+              />
+              <button
+                class="bg-primary border border-primary text-secondary px-8 rounded-r-md hover:bg-transparent hover:text-primary transition"
+              >
+                Cari
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End navbar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- breadcrums -->
+    <div class="container py-4 flex items-center gap-4">
+      <a href="/public/index.html" class="text-primary text-base">
+        <i class="fas fa-home"></i>
+      </a>
+      <span class="text-sm text-gray-400">
+        <i class="fas fa-chevron-right"></i>
+      </span>
+      <p class="text-gray-600 font-medium">Product View</p>
+    </div>
+    <!-- end breadcrums -->
+
+    <!-- product view -->
+    <div class="container grid grid-cols-2 gap-6">
+      <div>
+        <img src="/img/Produk/contoh_baju.jpg" class="w-full" />
+        <div class="grid grid-cols-5 gap-4 mt-4">
+          <img
+            src="/img/Produk/rekomen.jpg"
+            class="w-full cursor-pointer border border-primary"
+          />
+          <img
+            src="/img/Produk/rekomen.jpg"
+            class="w-full cursor-pointer border"
+          />
+          <img
+            src="/img/Produk/rekomen.jpg"
+            class="w-full cursor-pointer border"
+          />
+          <img
+            src="/img/Produk/rekomen.jpg"
+            class="w-full cursor-pointer border"
+          />
+          <img
+            src="/img/Produk/rekomen.jpg"
+            class="w-full cursor-pointer border"
+          />
+        </div>
+      </div>
+      <!-- produk konten -->
+      <div>
+        <h2 class="text-3xl font-montserrat font-semibold uppercase mb-2">
+          Baju perca
+        </h2>
+        <div class="flex items-center mb-3">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <div class="text-sm text-gray-500 ml-3">(70 Reviews)</div>
+        </div>
+        <div class="space-y-2">
+          <p class="text-gray-800 font-semibold font-inter space-x-2">
+            <span>Avilability : </span>
+            <span class="text-green-600">In Stock</span>
+          </p>
+          <p class="text-gray-800 font-semibold font-inter space-x-2">
+            <span>Brands : </span>
+            <span class="text-gray-600">Perca Hass</span>
+          </p>
+          <p class="text-gray-800 font-semibold font-inter space-x-2">
+            <span>Category : </span>
+            <span class="text-gray-600">Baju</span>
+          </p>
+        </div>
+        <div class="flex items-baseline mb-1 space-x-2 font-inter mt-4">
+          <p class="text-xl text-primary font-semibold">Rp. 50.000</p>
+          <p class="text-base text-gray-400 line-through">Rp. 123.000</p>
+        </div>
+        <p class="mt-4 text-gray-600">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
+          nesciunt. Vitae, at officiis. Amet odit eius quaerat. Harum possimus
+          quidem provident tenetur placeat, corporis, molestias nisi ipsam,
+          animi deserunt quod.
+        </p>
+
+        <!-- size -->
+        <div class="pt-4">
+          <h3 class="text-gray-800 uppercase font-inter pt-4">Size</h3>
+          <div class="flex items-center gap-2">
+            <!-- single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" class="hidden" id="size-xs" />
+              <label
+                for="size-xs"
+                class="text-lg border border-gray-200 rounded-sm h-6 w-6 flexl items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                >XS</label
+              >
+            </div>
+            <!-- single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" class="hidden" id="size-s" />
+              <label
+                for="size-s"
+                class="text-lg border border-gray-200 rounded-sm h-6 w-6 flexl items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                >S</label
+              >
+            </div>
+            <!-- single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" class="hidden" id="size-m" />
+              <label
+                for="size-m"
+                class="text-lg border border-gray-200 rounded-sm h-6 w-6 flexl items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                >M</label
+              >
+            </div>
+            <!-- single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" class="hidden" id="size-l" />
+              <label
+                for="size-l"
+                class="text-lg border border-gray-200 rounded-sm h-6 w-6 flexl items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                >L</label
+              >
+            </div>
+            <!-- single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" class="hidden" id="size-xl" />
+              <label
+                for="size-xl"
+                class="text-lg border border-gray-200 rounded-sm h-6 w-6 flexl items-center justify-center cursor-pointer shadow-sm text-gray-600"
+                >XL</label
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end size -->
+
+        <!-- quantity -->
+        <div class="mt-4">
+          <h3 class="text-gray-800 uppercase font-inter pt-4">Quantity</h3>
+          <div
+            class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max"
+          >
+            <div
+              class="h-8 w-8 text-lg flex items-center justify-center cursor-pointer select-none"
+            >
+              -
+            </div>
+            <div class="h-8 w-8 text-base flex items-center justify-center">
+              6
+            </div>
+            <div
+              class="h-8 w-8 text-lg flex items-center justify-center cursor-pointer select-none"
+            >
+              +
+            </div>
+          </div>
+        </div>
+        <!-- end quantity -->
+
+        <!-- cart button -->
+        <div class="flex gap-3 border-b border-gray-200 pb-5 mt-6">
+          <a
+            href="https://api.whatsapp.com/send/?phone=6288973295464&text=Hai kak, aku mau pesan : (isi dengan pesananmu atau screenshot produk)"
+            title="Hubungi Saya"
+            rel="noopener"
+            target="_blank"
+            class="bg-primary border border-primary text-white px-8 py-2 font-medium font-inter rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition"
+          >
+            <i class="fas fa-shopping-bag"></i>Order
+          </a>
+          <a
+            href="#"
+            class="border border-gray-300 text-gray-600 px-8 py-2 font-medium font-inter rounded uppercase flex items-center gap-2 hover:text-primary transition"
+          >
+            <i class="fas fa-heart"></i>like
+          </a>
+        </div>
+        <!-- end cart button -->
+
+        <!-- social share -->
+        <div class="flex gap-3 mt-4">
+          <span>
+            <p class="text-gray-400 flex items-center justify-center">
+              Find Us
+            </p>
+          </span>
+          <span>
+            <a href="#" class="hover:text-gray-500 h-8 w-8">
+              <i class="fab fa-instagram"></i> </a
+          ></span>
+        </div>
+        <!-- end social share -->
+      </div>
+      <!-- end produk konten -->
+    </div>
+    <!-- end product view -->
+
+    <!-- produk detail -->
+    <div class="container pb-16">
+      <h3
+        class="border-b border-gray-200 font-montserrat text-gray-800 pb-3 font-medium pt-6"
+      >
+        Product Detail
+      </h3>
+      <div class="w-3/5 pt-4">
+        <div class="text-gray-600 space-y-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            ullam deleniti iusto impedit nobis ex repellendus, voluptas maxime
+            autem ducimus, consequatur cum fuga voluptatum quod sint unde ab
+            aspernatur et?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia optio
+            numquam recusandae omnis alias velit, nostrum ipsam. Iste minima
+            quam unde sit error voluptatum itaque a ea nihil quisquam.
+            Repudiandae.
+          </p>
+        </div>
+        <!-- table detail -->
+        <table
+          class="table-auto border-collapse text-left text-gray-600 text-sm mt-6"
+        >
+          <tr>
+            <th
+              class="py-2 px-4 border border-gray-300 w-40 font-inter font-medium"
+            >
+              Weight
+            </th>
+            <td class="py-2 px-4 border border-gray-300">55 Kg</td>
+          </tr>
+          <tr>
+            <th
+              class="py-2 px-4 border border-gray-300 w-40 font-inter font-medium"
+            >
+              Weight
+            </th>
+            <td class="py-2 px-4 border border-gray-300">55 Kg</td>
+          </tr>
+          <tr>
+            <th
+              class="py-2 px-4 border border-gray-300 w-40 font-inter font-medium"
+            >
+              Weight
+            </th>
+            <td class="py-2 px-4 border border-gray-300">55 Kg</td>
+          </tr>
+        </table>
+        <!-- end table detail -->
+      </div>
+    </div>
+    <!-- end produk detail -->
+
+    <!-- produk wrapper -->
+    <div class="container pb-16">
+      <h2
+        class="text-2xl text-gray-800 uppercase mb-6 font-montserrat font-bold"
+      >
+        Related product
+      </h2>
+      <!-- poduk grid -->
+      <div class="grid grid-cols-4 gap-6">
+        <!-- single produk -->
+        <div class="bg-white shadow rounded overflow-hidden group">
+          <!-- produk image -->
+          <div class="relative">
+            <img
+              src="/img/Produk/contoh_baju.jpg"
+              alt="Baju Perca"
+              class="w-full"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition"
+            >
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- produk image -->
+
+          <!-- produk konten -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4
+                class="uppercase font-medium font-montserrat text-xl mb-2 text-gray-800 hover:text-primary transition"
+              >
+                Baju Perca
+              </h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-inter">
+              <p class="text-xl text-primary font-semibold">Rp. 50.000</p>
+              <p class="text-sm text-gray-400 line-through">Rp. 123.000</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6288973295464&text=Hai kak, aku mau pesan : (isi dengan pesananmu atau screenshot produk)"
+            title="Hubungi Saya"
+            rel="noopener"
+            target="_blank"
+            class="block w-full py-1 text-center text-white bg-primary border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+          >
+            Order</a
+          >
+          <!-- produk konten -->
+        </div>
+        <!-- single produk -->
+        <!-- single produk -->
+        <div class="bg-white shadow rounded overflow-hidden group">
+          <!-- produk image -->
+          <div class="relative">
+            <img
+              src="/img/Produk/contoh_baju.jpg"
+              alt="Baju Perca"
+              class="w-full"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition"
+            >
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- produk image -->
+
+          <!-- produk konten -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4
+                class="uppercase font-medium font-montserrat text-xl mb-2 text-gray-800 hover:text-primary transition"
+              >
+                Baju Perca
+              </h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-inter">
+              <p class="text-xl text-primary font-semibold">Rp. 50.000</p>
+              <p class="text-sm text-gray-400 line-through">Rp. 123.000</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6288973295464&text=Hai kak, aku mau pesan : (isi dengan pesananmu atau screenshot produk)"
+            title="Hubungi Saya"
+            rel="noopener"
+            target="_blank"
+            class="block w-full py-1 text-center text-white bg-primary border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+          >
+            Order</a
+          >
+          <!-- produk konten -->
+        </div>
+        <!-- single produk -->
+        <!-- single produk -->
+        <div class="bg-white shadow rounded overflow-hidden group">
+          <!-- produk image -->
+          <div class="relative">
+            <img
+              src="/img/Produk/contoh_baju.jpg"
+              alt="Baju Perca"
+              class="w-full"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition"
+            >
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- produk image -->
+
+          <!-- produk konten -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4
+                class="uppercase font-medium font-montserrat text-xl mb-2 text-gray-800 hover:text-primary transition"
+              >
+                Baju Perca
+              </h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-inter">
+              <p class="text-xl text-primary font-semibold">Rp. 50.000</p>
+              <p class="text-sm text-gray-400 line-through">Rp. 123.000</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6288973295464&text=Hai kak, aku mau pesan : (isi dengan pesananmu atau screenshot produk)"
+            title="Hubungi Saya"
+            rel="noopener"
+            target="_blank"
+            class="block w-full py-1 text-center text-white bg-primary border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+          >
+            Order</a
+          >
+          <!-- produk konten -->
+        </div>
+        <!-- single produk -->
+        <!-- single produk -->
+        <div class="bg-white shadow rounded overflow-hidden group">
+          <!-- produk image -->
+          <div class="relative">
+            <img
+              src="/img/Produk/contoh_baju.jpg"
+              alt="Baju Perca"
+              class="w-full"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition"
+            >
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- produk image -->
+
+          <!-- produk konten -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4
+                class="uppercase font-medium font-montserrat text-xl mb-2 text-gray-800 hover:text-primary transition"
+              >
+                Baju Perca
+              </h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-inter">
+              <p class="text-xl text-primary font-semibold">Rp. 50.000</p>
+              <p class="text-sm text-gray-400 line-through">Rp. 123.000</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6288973295464&text=Hai kak, aku mau pesan : (isi dengan pesananmu atau screenshot produk)"
+            title="Hubungi Saya"
+            rel="noopener"
+            target="_blank"
+            class="block w-full py-1 text-center text-white bg-primary border-primary rounded-b hover:bg-transparent hover:text-primary transition"
+          >
+            Order</a
+          >
+          <!-- produk konten -->
+        </div>
+        <!-- single produk -->
+      </div>
+      <!-- end produk grid -->
+    </div>
+    <!-- end produk wrapper -->
+  </body>
+</html>
